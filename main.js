@@ -1,4 +1,5 @@
 // loop practice # 3
+/*
 var students = [
   {
    name: 'Liz',
@@ -58,3 +59,81 @@ for(var i=0 ; i<students.length ; i++) {
     console.log(students[i].name + ' is older than 25')
   }
 }
+*/
+
+
+// loop practice # 4
+var months = [
+  {
+    name: 'January',
+    days: 31
+  },
+
+  {
+    name: 'February',
+    days: 28
+  },
+
+  {
+    name: 'March',
+    days: 31
+  },
+
+  {
+    name: 'April',
+    days: 30
+  },
+
+  {
+    name: 'May',
+    days: 31
+  },
+
+  {
+    name: 'June',
+    days: 30
+  },
+
+  {
+    name: 'July',
+    days: 31
+  },
+
+  {
+    name: 'August',
+    days: 31
+  },
+
+  {
+    name: 'September',
+    days: 30
+  },
+
+  {
+    name: 'October',
+    days: 31
+  },
+
+  {
+    name: 'November',
+    days: 30
+  },
+
+  {
+    name: 'December',
+    days: 31
+  }
+]; // end of months array
+
+// 1. Write a set of loops that will print out each day of each month in the following format: Month day for each day of the year (365 statements printed)
+
+// accesses each month name of the year
+for(var i=0 ; i<months.length ; i++) {
+  //console.log(months[i].name)
+  for(var k=1 ; k<=months[i].days ; k++) {
+    console.log(months[i].name + ' ' + k)
+  }
+}
+
+
+// 2. Write a set of loops that will print out each second of each hour in a day (in 24 hour clock format).
