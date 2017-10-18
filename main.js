@@ -1,5 +1,5 @@
 // loop practice # 3
-/*
+
 var students = [
   {
    name: 'Liz',
@@ -59,7 +59,7 @@ for(var i=0 ; i<students.length ; i++) {
     console.log(students[i].name + ' is older than 25')
   }
 }
-*/
+
 
 
 // loop practice # 4
@@ -127,7 +127,6 @@ var months = [
 
 // 1. Write a set of loops that will print out each day of each month in the following format: Month day for each day of the year (365 statements printed)
 
-// accesses each month name of the year
 for(var i=0 ; i<months.length ; i++) {
   //console.log(months[i].name)
   for(var k=1 ; k<=months[i].days ; k++) {
@@ -136,4 +135,12 @@ for(var i=0 ; i<months.length ; i++) {
 }
 
 
-// 2. Write a set of loops that will print out each second of each hour in a day (in 24 hour clock format).
+// 2. Write a set of loops that will print out each second of each hour in a day (in 24 hour clock format): hh:mm:ss should be 82,800 statements printed.
+
+for(var i=0 ; i<24 ; i++) {
+  for(var j=0 ; j<60 ; j++){
+    for(var k=0 ; k<60 ; k++) {
+      console.log(i + ' : ' + j  + ' : ' + k)
+    }
+  }
+}
